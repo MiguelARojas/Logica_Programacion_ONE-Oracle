@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function saltoLinea() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltoLinea();
+    }
+
+    var victorias;
+    var empates;
+
+    victorias = parseInt(prompt("Informe la cantidad de victorias"));
+    empates = parseInt(prompt("Informe la cantidad de empates"));
+
+    totalPuntos = victorias * 3 + empates;
+
+
+    imprimir("El total de puntos del equipo es: " + totalPuntos);
+
+    if (totalPuntos > 28) {
+
+        imprimir("El equipo está mejor que el año pasado");
+
+    }else if (totalPuntos < 28) { 
+
+        imprimir("El equipo esta peor que el año pasado");
+
+    }else if (totalPuntos == 28){
+
+        imprimir("El equipo esta igual que el año pasado");
+
+    }
+
+</script>
